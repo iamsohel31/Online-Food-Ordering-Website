@@ -1,0 +1,288 @@
+/* CSS Reset */
+*{
+    margin:0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+
+}
+
+/* Navigation Bar: logo and image*/
+#logo{
+    height: 35px;
+    
+
+}
+#logo img{
+        height: 83px;
+        margin: -5px 25px;
+
+
+}
+
+/* Navigation Bar: list */
+ #navbar ul{
+    display: flex;
+
+
+}
+
+#navbar::before{
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: -1;
+    opacity: 0.7;
+}
+#navbar ul li{
+    margin: 23px 34px;
+    list-style: none;
+    font-size: 1.5rem;
+
+
+}
+
+#navbar ul li a{
+    padding:  4px 32px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color: rgb(6, 6, 6);
+    background-color: rgb(195, 195, 195);
+    border-radius: 20px;
+    
+
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 4px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{  
+    content: "";
+    position: absolute;
+    height: 670px;
+    width: 100%;
+    margin-top: -255px;
+    background: url(../bg1.jpg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+#home h1{
+    font-size: 3.5rem;
+    padding:20px 20px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    margin-top: -0px;
+}
+#home p{
+    font-size: 1.3rem;
+    padding:15px 20px;
+    text-align: center;
+}
+.btn{
+    padding: 5px 22px;
+    border: 2px solid white;
+    background-color: rgb(169 114 114);
+    color: white;
+    margin: 9px 20px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: -2px -2px 5px #5c5151, 2px 2px 5px #484848;
+}
+.btn:hover{
+    background-color: red;
+}
+.heading{
+    width: 100vh;
+    height: 54px;
+    display: block;
+    font-size: 1.5rem;
+   margin: auto;
+    padding: 15px;
+
+}
+
+ /* Secton css */
+ .menu{
+    display: flex;
+ }
+ #menu1{
+    height:240px;
+    border: 2px solid red;
+    margin: 10px 50px;
+    padding: 10px 10px;
+}
+#menu1 img{
+    width:100px;
+    height:100px;
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
+#menu2{
+    height:240px;
+    border: 2px solid red;
+    margin:10px 45px;
+    padding: 10px 10px;
+}
+#menu2 img{
+    width:100px;
+    height:100px;
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
+#menu3{
+    height:240px;
+    border: 2px solid red;
+    margin: 10px 50px;
+    padding: 10px 10px;
+ }
+ #menu3 img{
+    width:158px;
+    height:96px;
+    display: block;
+    margin: auto;
+    padding: 5px;
+ }
+ .menuall{
+    background-color: #e7ddeb;
+    border-radius: 23px;
+ }
+/* Clint section  */
+.clint{
+    font-size:3rem;
+}
+.clintsec{
+    display: flex;
+
+}
+.clint1 img{
+    height: 85px;
+    margin-left: 300px;
+}
+.clint2 img{
+    height: 46px;
+}
+.clint3 img{
+    width:74px;
+}
+.clint4 img{
+    width:64px;
+}
+.clint5 img{
+    height: 62px;
+    margin-right: 330px;
+}
+.clint2 img:hover{
+    opacity: 0.7;
+}
+.clint3 img:hover{
+    opacity: 0.7;
+}
+.clint4 img:hover{
+    opacity: 0.7;
+}
+.clint5 img:hover{
+    opacity: 0.7;
+}
+.clint1 img:hover{
+    opacity: 0.7;
+}
+.clint-section::before{
+    content: "";
+    position:absolute;
+    height: 200px;
+    background: url(../bg.jpg) ;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+.clint-section{
+    margin: 20px 0px;
+}
+/* Contact  Section */
+.contact::before{
+    content: "";
+    position: absolute;
+    height:490px;
+    width:100%;
+    background:url(../contact.jpg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: 1;
+}
+#contactus{
+    font-size: 3rem;
+}
+.contactbox input,.contactbox textarea{
+    width: 100%;
+    padding: 0.5rem;
+    box-shadow: -2px -2px 5px #a09a9a, 2px 2px 5px #5a5b60;
+    border-radius: 10px;
+}
+.contactbox form{
+    width:40%;
+    margin: auto;
+}
+.contactbox label{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.button{
+    padding: 5px 22px;
+    border: 2px solid white;
+    background-color: rgb(169 114 114);
+    color: white;
+    margin:14px 20px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: -2px -2px 5px #5c5151, 2px 2px 5px #484848;
+
+}
+.button:hover{
+    background-color: rgb(54, 80, 183);
+     }
+
+
+.formgrp placeholder{
+    font-weight: bold;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+ /* Utility class */
+ .center{
+    text-align: center;
+ }
+.mid{
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
